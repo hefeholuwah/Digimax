@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LED Screen Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>LED Screen Calculator</h1>
+      <form id="calculator-form">
+        <label for="screen-height">Screen Height (mm):</label>
+        <input type="number" id="screen-height" required />
+
+        <label for="screen-width">Screen Width (mm):</label>
+        <input type="number" id="screen-width" required />
+
+        <button type="submit">Calculate</button>
+      </form>
+
+      <div id="results">
+        <h2>Results</h2>
+        <p id="modules">Total Modules:</p>
+        <p id="receivers">Total Receivers:</p>
+        <p id="power-supplies">Total Power Supplies:</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
